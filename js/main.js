@@ -37,18 +37,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // 4. Controle dos vídeos locais (pausa os outros vídeos se um começar a tocar)
-    const videosReels = document.querySelectorAll('.reel-local-card video');
-    if (videosReels.length > 0) {
-        videosReels.forEach(videoAtual => {
-            videoAtual.addEventListener('play', () => {
-                videosReels.forEach(outroVideo => {
-                    if (outroVideo !== videoAtual) {
-                        outroVideo.pause();
-                    }
-                });
+    // 4. Carrossel do Instagram no celular (1 card por vez + setas + bolinhas + touch)
+    const instaTrack = document.getElementById('insta-track');
+    const instaPrev = document.getElementById('insta-prev');
+    const instaNext = document.getElementById('insta-next');
+    const instaDots = document.querySelectorAll('#insta-dots .dot');
+
+    if (instaTrack && instaDots.length > 0) {
+        let slideAtual = 0;
+        const totalSlides = instaDots.length;
+
+        function atualizarCarrosselInsta() {
+            if (window.innerWidth <= 768) {
+                instaTrack.style.transform = `translateX(-${slideAtual * 100}%)`;
+            } else {
+                instaTrack.style.transform = 'none';
+            }
+
+            instaDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === slideAtual);
+            });
+        }
+
+        if (instaPrev) {
+            instaPrev.addEventListener('click', () => {
+                slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
+                atualizarCarrosselInsta();
+            });
+        }
+
+        if (instaNext) {
+            instaNext.addEventListener('click', () => {
+                slideAtual = (slideAtual + 1) % totalSlides;
+                atualizarCarrosselInsta();
+            });
+        }
+
+        instaDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                slideAtual = Number(dot.getAttribute('data-index'));
+                atualizarCarrosselInsta();
             });
         });
+
+        // Suporte a deslizar com o dedo (swipe)
+        let touchStartX = 0;
+        instaTrack.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        instaTrack.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 40) {
+                if (diff > 0) {
+                    slideAtual = (slideAtual + 1) % totalSlides;
+                } else {
+                    slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
+                }
+                atualizarCarrosselInsta();
+            }
+        }, { passive: true });
+
+        window.addEventListener('resize', atualizarCarrosselInsta);
     }
 
     // 5. Lógica de Filtro pelo Menu de Opções na página catalogo.html

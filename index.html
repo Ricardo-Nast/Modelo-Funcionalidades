@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizonte Lar | Negócios Imobiliários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <h1>HORIZONTE <span>LAR</span></h1>
+                <small>NEGÓCIOS IMOBILIÁRIOS</small>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="index.html#sobre">Sobre nós</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="anuncio.html">Anuncie</a>
+                <a href="index.html#contato">Contato</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="https://wa.me/5522999991234" class="nav-phone" target="_blank">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    <span>(22) 99999-1234</span>
+                </a>
+                <button class="menu-btn" id="menu-btn" aria-label="Abrir menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--verde-escuro)"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION COM MENU DE OPÇÕES ARREDONDADO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h2>O imóvel que você procura pode estar aqui.</h2>
+
+            <form action="catalogo.html" method="GET" class="filter-pill-bar">
+                <div class="filter-field">
+                    <select name="finalidade" aria-label="O que deseja?">
+                        <option value="">O que deseja?</option>
+                        <option value="aluguel">Aluguel</option>
+                        <option value="venda">Venda</option>
+                    </select>
+                </div>
+
+                <div class="filter-field">
+                    <select name="tipo" aria-label="Tipos de imóvel">
+                        <option value="">Tipos de imóvel</option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="terreno">Terreno</option>
+                        <option value="sala comercial">Sala Comercial</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-buscar-pill">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5522999991234" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- MAIN -->
+    <main>
+        <!-- VITRINE DE IMÓVEIS -->
+        <section class="catalogo fade-in" id="imoveis">
+            <div class="container">
+                <div class="section-top">
+                    <h2>Imóveis em Destaque</h2>
+                    <a href="catalogo.html" class="ver-todos">Ver catálogo completo →</a>
+                </div>
+
+                <div class="grid-imoveis">
+                    
+                    <!-- Card 1 -->
+                    <article class="card-imovel">
+                        <div class="img-wrapper">
+                            <img src="imagens/1.jpg" alt="Casa Residencial" class="img-imovel" loading="lazy">
+                            <div class="img-tags">
+                                <span class="tag venda">À Venda</span>
+                                <span class="tag tipo">Casa</span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Casa Residencial — Centro</h3>
+                            <p class="tipo-texto">Tipo: Casa</p>
+                            <p class="preco">R$ 350.000</p>
+                            <div class="specs-icons">
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+                                    <strong>3</strong>
+                                    <span>Quartos</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2H7zm13 6V5c0-1.1-.9-2-2-2H9C6.79 3 5 4.79 5 7v6H2v2h1v3c0 1.66 1.34 3 3 3h1v1h2v-1h6v1h2v-1h1c1.66 0 3-1.34 3-3v-3h1v-2h-2z"/></svg>
+                                    <strong>3</strong>
+                                    <span>Banheiros</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                                    <strong>1</strong>
+                                    <span>Garagem</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2V8h2V6H7v4zm10 4h-2v2h-2v2h4v-4z"/></svg>
+                                    <strong>180m²</strong>
+                                    <span>Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card-imovel">
+                        <div class="img-wrapper">
+                            <img src="imagens/2.jpg" alt="Apartamento" class="img-imovel" loading="lazy">
+                            <div class="img-tags">
+                                <span class="tag aluguel">Aluguel</span>
+                                <span class="tag tipo">Apartamento</span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Apartamento — Pimentel Marques</h3>
+                            <p class="tipo-texto">Tipo: Apartamento</p>
+                            <p class="preco">R$ 1.500/mês</p>
+                            <div class="specs-icons">
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+                                    <strong>2</strong>
+                                    <span>Quartos</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2H7zm13 6V5c0-1.1-.9-2-2-2H9C6.79 3 5 4.79 5 7v6H2v2h1v3c0 1.66 1.34 3 3 3h1v1h2v-1h6v1h2v-1h1c1.66 0 3-1.34 3-3v-3h1v-2h-2z"/></svg>
+                                    <strong>3</strong>
+                                    <span>Banheiros</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                                    <strong>1</strong>
+                                    <span>Garagem</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2V8h2V6H7v4zm10 4h-2v2h-2v2h4v-4z"/></svg>
+                                    <strong>85m²</strong>
+                                    <span>Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card-imovel">
+                        <div class="img-wrapper">
+                            <img src="imagens/3.jpg" alt="Terreno" class="img-imovel" loading="lazy">
+                            <div class="img-tags">
+                                <span class="tag venda">À Venda</span>
+                                <span class="tag tipo">Terreno</span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Terreno — Parque das Águas</h3>
+                            <p class="tipo-texto">Tipo: Terreno</p>
+                            <p class="preco">R$ 120.000</p>
+                            <div class="specs-icons">
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+                                    <strong>0</strong>
+                                    <span>Quartos</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2H7zm13 6V5c0-1.1-.9-2-2-2H9C6.79 3 5 4.79 5 7v6H2v2h1v3c0 1.66 1.34 3 3 3h1v1h2v-1h6v1h2v-1h1c1.66 0 3-1.34 3-3v-3h1v-2h-2z"/></svg>
+                                    <strong>3</strong>
+                                    <span>Banheiros</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                                    <strong>0</strong>
+                                    <span>Garagem</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2V8h2V6H7v4zm10 4h-2v2h-2v2h4v-4z"/></svg>
+                                    <strong>360m²</strong>
+                                    <span>Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="card-imovel">
+                        <div class="img-wrapper">
+                            <img src="imagens/4.jpg" alt="Sala Comercial" class="img-imovel" loading="lazy">
+                            <div class="img-tags">
+                                <span class="tag aluguel">Aluguel</span>
+                                <span class="tag tipo">Sala Comercial</span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Sala Comercial — Centro</h3>
+                            <p class="tipo-texto">Tipo: Sala Comercial</p>
+                            <p class="preco">R$ 2.000/mês</p>
+                            <div class="specs-icons">
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+                                    <strong>0</strong>
+                                    <span>Quartos</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2H7zm13 6V5c0-1.1-.9-2-2-2H9C6.79 3 5 4.79 5 7v6H2v2h1v3c0 1.66 1.34 3 3 3h1v1h2v-1h6v1h2v-1h1c1.66 0 3-1.34 3-3v-3h1v-2h-2z"/></svg>
+                                    <strong>3</strong>
+                                    <span>Banheiros</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                                    <strong>2</strong>
+                                    <span>Garagem</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2V8h2V6H7v4zm10 4h-2v2h-2v2h4v-4z"/></svg>
+                                    <strong>65m²</strong>
+                                    <span>Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- REDES SOCIAIS / INSTAGRAM REELS -->
+        <section class="social-feed-section fade-in" id="redes-sociais">
+            <div class="container">
+                <div class="section-top">
+                    <div>
+                        <span class="subtitulo-secao">Novidades e Bastidores</span>
+                        <h2>Acompanhe no Instagram</h2>
+                    </div>
+                    <a href="https://www.instagram.com/" target="_blank" class="btn-insta-seguir">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>@horizontelar.imoveis</span>
+                    </a>
+                </div>
+
+                <div class="insta-grid">
+                    <!-- 1° Post -->
+                    <div class="insta-card">
+                        <iframe src="https://www.instagram.com/reel/De-1pcGy_Kp/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- 2° Post -->
+                    <div class="insta-card">
+                        <iframe src="https://www.instagram.com/reel/De5moC2ynTJ/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- 3° Post -->
+                    <div class="insta-card">
+                        <iframe src="https://www.instagram.com/reel/Dex2GFuSgyB/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="sobre-nos fade-in" id="sobre">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <div class="sobre-texto">
+                    <p>Fundada em 2019, em Bom Jesus do Itabapoana – RJ, a <strong>Horizonte Lar Negócios Imobiliários</strong> atua no mercado imobiliário com o compromisso de oferecer soluções eficientes e seguras para quem deseja comprar, vender ou alugar um imóvel.</p>
+                    <p>Nossa empresa tem como pilares a transparência, a ética profissional e a excelência no atendimento. Trabalhamos para compreender as necessidades de cada cliente, proporcionando um acompanhamento personalizado em todas as etapas da negociação.</p>
+                    <p>Contamos com uma equipe comprometida e preparada para oferecer assessoria imobiliária, identificar oportunidades e facilitar processos, sempre buscando estabelecer relações comerciais pautadas na confiança e na credibilidade.</p>
+                </div>
+
+                <div class="pilares-grid">
+                    <div class="pilar-card">
+                        <h3>Missão</h3>
+                        <p>Conectar pessoas às melhores oportunidades imobiliárias, contribuindo para a realização de seus objetivos pessoais e profissionais.</p>
+                    </div>
+                    <div class="pilar-card">
+                        <h3>Visão</h3>
+                        <p>Consolidar nossa presença no mercado regional, sendo reconhecidos pela qualidade dos serviços, pela credibilidade e pelo compromisso com nossos clientes.</p>
+                    </div>
+                    <div class="pilar-card">
+                        <h3>Valores</h3>
+                        <p>Ética, transparência, responsabilidade, respeito e excelência no atendimento.</p>
+                    </div>
+                </div>
+
+                <blockquote class="slogan">
+                    "Horizonte Lar — Realizando sonhos, construindo novos começos."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- REDES SOCIAIS E MAPA -->
+        <section class="contato-mapa fade-in" id="contato">
+            <div class="container map-container">
+                <div class="info-contato">
+                    <h2>Nossas Redes e Localização</h2>
+                    <p><strong>Endereço:</strong> Rua Dr. Abreu Lima, 145, Centro<br>Bom Jesus do Itabapoana – RJ</p>
+                    <div class="redes-sociais">
+                        <a href="#" class="social-btn instagram">Instagram: @horizontelar.imoveis</a>
+                        <a href="#" class="social-btn facebook">Facebook: Horizonte Lar Imóveis</a>
+                        <a href="https://wa.me/5522999991234" class="social-btn whatsapp">WhatsApp: (22) 99999-1234</a>
+                    </div>
+                </div>
+                <div class="mapa-iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117565.41926615563!2d-41.74868019053359!3d-21.13524670679632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb17bd5b8fbaeb7%3A0xc368a52924dc5c41!2sBom%20Jesus%20do%20Itabapoana%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Horizonte Lar Negócios Imobiliários LTDA</h4>
+                <p>CNPJ: 00.000.000/0000-00</p>
+                <p>Fundação: 15/03/2019</p>
+            </div>
+            <div>
+                <h4>E-mail</h4>
+                <p>contato@horizontelar.com.br</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

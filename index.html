@@ -239,7 +239,7 @@
             </div>
         </section>
 
-        <!-- REDES SOCIAIS / INSTAGRAM REELS -->
+        <!-- REDES SOCIAIS / CARROSSEL NO MOBILE -->
         <section class="social-feed-section fade-in" id="redes-sociais">
             <div class="container">
                 <div class="section-top">
@@ -253,21 +253,34 @@
                     </a>
                 </div>
 
-                <div class="insta-grid">
-                    <!-- 1° Post -->
-                    <div class="insta-card">
-                        <iframe src="https://www.instagram.com/reel/De-1pcGy_Kp/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                <div class="insta-carousel-wrapper">
+                    <button class="carousel-arrow prev" id="insta-prev" aria-label="Post anterior">❮</button>
+
+                    <div class="insta-grid" id="insta-track">
+                        <!-- 1° Post -->
+                        <div class="insta-card">
+                            <iframe src="https://www.instagram.com/reel/De-1pcGy_Kp/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                        </div>
+
+                        <!-- 2° Post -->
+                        <div class="insta-card">
+                            <iframe src="https://www.instagram.com/reel/De5moC2ynTJ/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                        </div>
+
+                        <!-- 3° Post -->
+                        <div class="insta-card">
+                            <iframe src="https://www.instagram.com/reel/Dex2GFuSgyB/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+                        </div>
                     </div>
 
-                    <!-- 2° Post -->
-                    <div class="insta-card">
-                        <iframe src="https://www.instagram.com/reel/De5moC2ynTJ/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-                    </div>
+                    <button class="carousel-arrow next" id="insta-next" aria-label="Próximo post">❯</button>
+                </div>
 
-                    <!-- 3° Post -->
-                    <div class="insta-card">
-                        <iframe src="https://www.instagram.com/reel/Dex2GFuSgyB/embed/" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-                    </div>
+                <!-- Bolinhas indicadoras (aparecem apenas no celular) -->
+                <div class="carousel-dots" id="insta-dots">
+                    <button class="dot active" data-index="0" aria-label="Ir para post 1"></button>
+                    <button class="dot" data-index="1" aria-label="Ir para post 2"></button>
+                    <button class="dot" data-index="2" aria-label="Ir para post 3"></button>
                 </div>
             </div>
         </section>
